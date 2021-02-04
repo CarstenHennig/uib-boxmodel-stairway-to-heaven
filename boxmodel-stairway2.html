@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxmodel Stairway</title>
+    <style>
+        .yellowbox-borderred1 {
+            box-sizing: border-box;
+            background-color: yellow;
+            border: 10px solid red;
+            width: 200px;
+            height: 200px;
+        }
+
+        .yellowbox-borderred2 {
+            box-sizing: border-box;
+            background-color: yellow;
+            border: 10px solid red;
+            width: 200px;
+            height: 200px;
+            margin-left: 200px;
+        }
+
+        .yellowbox-borderred3 {
+            box-sizing: border-box;
+            background-color: yellow;
+            border: 10px solid red;
+            width: 200px;
+            height: 200px;
+            margin-left: 200px;
+        }
+
+        .yellowbox-borderred4 {
+            box-sizing: border-box;
+            background-color: yellow;
+            border: 10px solid red;
+            width: 200px;
+            height: 200px;
+            margin-left: 200px;
+        }
+
+        .redbox {
+            box-sizing: border-box;
+            background-color: red;
+            width: 200px;
+            height: 200px;
+        }
+
+        .redbox2 {
+            box-sizing: border-box;
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            margin-left: 200px;
+        }
+
+        .redbox3 {
+            box-sizing: border-box;
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            margin-left: 400px;
+            margin-top: -200px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="yellowbox-borderred1"></div>
+        <div class="redbox">
+            <div class="yellowbox-borderred2"></div>
+        </div>
+        <div class="redbox">
+            <div class="redbox2">
+                <div class="yellowbox-borderred3"></div>
+            </div>
+        </div>
+        <div class="redbox">
+            <div class="redbox2"></div>
+            <div class="redbox3">
+                <div class="yellowbox-borderred4"></div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
