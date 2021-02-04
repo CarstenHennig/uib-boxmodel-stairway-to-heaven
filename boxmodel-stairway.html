@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxmodel Stairway</title>
+    <style>
+        .pinkborder {
+            box-sizing: border-box;
+            border: 10px solid pink;
+            width: 1080px;
+            height: 1080px;
+        }
+
+        .greenbox1 {
+            box-sizing: content-box;
+            border: 10px solid black;
+            background-color: chartreuse;
+            width: 245px;
+            height: 245px;
+            margin: 797px 800px 0 0;
+        }
+
+        .greenbox2 {
+            box-sizing: content-box;
+            border: 10px solid chartreuse;
+            background-color: chartreuse;
+            width: 245px;
+            height: 245px;
+            margin: -275px 250px 125px 255px;
+        }
+
+        .greenbox3 {
+            box-sizing: content-box;
+            border: 10px solid black;
+            background-color: chartreuse;
+            width: 245px;
+            height: 245px;
+            margin: -275px 550px 125px 255px;
+
+        }
+
+        .greenbox4 {
+            box-sizing: content-box;
+            border: 10px solid chartreuse;
+            background-color: chartreuse;
+            width: 245px;
+            height: 245px;
+            margin: -271px 0px 225px 255px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="pinkborder">
+            <div class="greenbox1">
+                <div class="greenbox2">
+                    <div class="greenbox3">
+                        <div class="greenbox4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
